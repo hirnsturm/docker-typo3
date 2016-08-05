@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  apache:
+    ports:
+      - "{{apache_port|8080}}:80"
+
+  mysql:
+    ports:
+      - "{{mysql_port|3307}}:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: {{mysql_root_password|root}}
+      MYSQL_DATABASE: {{mysql_database|dbname}}
+      MYSQL_USER: {{mysql_user|dbuser}}
+      MYSQL_PASSWORD: {{mysql_password|dbpassword}}

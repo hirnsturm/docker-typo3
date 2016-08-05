@@ -1,0 +1,27 @@
+version: '2'
+
+services:
+  apache:
+    image: httpd:2.4.23-alpine
+    links:
+      - phpfpm
+    volumes:
+      - ../htdocs/:/usr/local/apache2/htdocs/:ro
+      - ./srv-conf/httpd.conf:/usr/local/apache2/conf/httpd.conf:ro
+
+  phpfpm:
+    build:
+      context: .
+      dockerfile: dockerfiles/php
+    links:
+      - mysql:db_host
+    user: "1000:82"
+    volumes:
+      - ../htdocs/:/usr/local/apache2/htdocs/:rw
+      - ./srv-conf/php.ini:/usr/local/etc/php/conf.d/zz-php.ini:ro
+    working_dir: /usr/local/apache2/htdocs/
+
+  mysql:
+    image: mysql:5.5.50
+    volumes:
+      - /tmp/db-imports/
