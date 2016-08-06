@@ -1,11 +1,15 @@
 # Docker TYPO3 CMS Scaffold
 
 ## Table Of Contents
+- [What does it do?](#What-does-it-do)
 - [Requirements](#Requirements)
 - [Installation](#Installation)
 - [Restart Docker Container](#Restart)
 - [Import a SQL-Dump](#Import-SQL-Dump)
 - [Configuration](#Configuration)
+
+## <a name="What-does-it-do"></a>What does it do?
+This project offers an scaffold for TYPO3 CMS in a virtual machine with docker.
 
 ## <a name="Requirements"></a>Requirements
 For running [docker](https://www.docker.com) containers you have to download and install it:
