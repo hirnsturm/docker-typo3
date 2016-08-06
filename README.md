@@ -22,6 +22,10 @@ For the first installation you have to execute this command:
 ```
 docker-compose up -d
 ```
+Install the TYPO3 CMS 6 LTS with composer:
+```
+composer install
+```
 ## <a name="Restart"></a>Restart Docker Container
 ```
 docker-compose restart
