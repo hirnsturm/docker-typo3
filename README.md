@@ -12,17 +12,19 @@
 This project offers an scaffold for TYPO3 CMS in a virtual machine with docker.
 
 ## <a name="Requirements"></a>Requirements
-For running [docker](https://www.docker.com) containers you have to download and install it:
-- [docker for Linux](https://docs.docker.com/engine/getstarted/)
-- [docker for Mac](https://docs.docker.com/docker-for-mac/)
-- [docker for Windows](https://docs.docker.com/docker-for-windows/)
+
+- [docker](https://www.docker.com) - virtual machine
+    - [docker for Linux](https://docs.docker.com/engine/getstarted/)
+    - [docker for Mac](https://docs.docker.com/docker-for-mac/)
+    - [docker for Windows](https://docs.docker.com/docker-for-windows/)
+- [composer](https://getcomposer.org/) - PHP dependency management tool
 
 ## <a name="Installation"></a>Installation
 For the first installation you have to execute this command:
 ```
 docker-compose up -d
 ```
-Install the TYPO3 CMS 6 LTS with composer:
+Install the [TYPO3 CMS 6 LTS](https://composer.typo3.org/) with composer:
 ```
 composer install
 ```
