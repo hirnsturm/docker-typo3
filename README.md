@@ -1,4 +1,4 @@
-# Docker
+# Docker TYPO3 CMS Scaffold
 
 ## Table Of Contents
 - [Requirements](#Requirements)
