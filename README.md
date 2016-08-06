@@ -11,13 +11,13 @@
 ## <a name="What-does-it-do"></a>What does it do?
 This project offers an scaffold for TYPO3 CMS in a virtual machine with docker.
 
-## <a name="Requirements"></a>Requirements
+## <a name="Requirements"></a>Minimum Requirements
 
-- [docker](https://www.docker.com) - virtual machine
+- [docker](https://www.docker.com) 1.12.0 - virtual machine
     - [docker for Linux](https://docs.docker.com/engine/getstarted/)
     - [docker for Mac](https://docs.docker.com/docker-for-mac/)
     - [docker for Windows](https://docs.docker.com/docker-for-windows/)
-- [composer](https://getcomposer.org/) - PHP dependency management tool
+- [composer](https://getcomposer.org/) 1.2.0 - PHP dependency management tool
 
 ## <a name="Installation"></a>Installation
 For the first installation you have to execute this command:
