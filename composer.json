@@ -9,10 +9,13 @@
     "typo3/cms": "^6.2.26",
     "typo3-ter/typo3-console": "^1.1.7"
   },
+  "config": {
+    "vendor-dir": "htdocs/vendor"
+  },
   "extra": {
     "typo3/cms": {
       "cms-package-dir": "{$vendor-dir}/typo3/cms",
-      "web-dir": "web"
+      "web-dir": "htdocs"
     }
   }
 }

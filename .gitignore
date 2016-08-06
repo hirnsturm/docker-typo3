@@ -1,8 +1,10 @@
 .idea
 
 docker-compose.override.yml
+composer.lock
 
+htdocs/typo3
+htdocs/typo3conf
+htdocs/typo3temp
 htdocs/vendor
-htdocs/web
-htdocs/composer.lock
 htdocs/index.php
