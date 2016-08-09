@@ -5,7 +5,6 @@
 - [Requirements](#Requirements)
 - [Installation](#Installation)
 - [Restart Docker Container](#Restart)
-- [Import a SQL-Dump](#Import-SQL-Dump)
 - [Configuration](#Configuration)
 
 ## <a name="What-does-it-do"></a>What does it do?
@@ -28,15 +27,10 @@ Install the [TYPO3 CMS 6 LTS](https://composer.typo3.org/) with composer:
 ```
 composer install
 ```
+
 ## <a name="Restart"></a>Restart Docker Container
 ```
 docker-compose restart
-```
-## <a name="Import-SQL-Dump"></a>Import a SQL-Dump
-Username, password and database can be configured individually (see (Configuration)[#Configuration]).
-```
-docker cp {path}/{dump}.sql dwidb_mysql_1:/tmp/db-imports/{dump}.sql && \
-docker exec -it dwidb_mysql_1 mysql -u{user} -p {database} -e "source /tmp/db-imports/{dump}.sql"
 ```
 
 ## <a name="Configuration"></a>Configuration
