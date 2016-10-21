@@ -2,7 +2,7 @@ version: '2'
 
 services:
   apache:
-    image: httpd:2.4.23-alpine
+    image: httpd:2.4.23
     links:
       - phpfpm
     volumes:
@@ -15,13 +15,13 @@ services:
       dockerfile: dockerfiles/php
     links:
       - mysql:db_host
-    user: "1000:82"
+    user: "33:1000"
     volumes:
       - ../htdocs/:/usr/local/apache2/htdocs/:rw
       - ./srv-conf/php.ini:/usr/local/etc/php/conf.d/zz-php.ini:ro
     working_dir: /usr/local/apache2/htdocs/
 
   mysql:
-    image: mysql:5.5.50
+    image: mysql:5.7.16
     volumes:
-      - /tmp/db-imports/
+       - /tmp/db_imports

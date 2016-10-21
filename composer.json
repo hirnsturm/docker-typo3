@@ -1,4 +1,15 @@
 {
+  "name": "hirnsturm/docker-typo3",
+  "description": "",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Steve Lenz",
+      "email": "kontakt@steve-lenz.de",
+      "role": "Technical Project Manager"
+    }
+  ],
   "repositories": [
     {
       "type": "composer",
@@ -6,8 +17,11 @@
     }
   ],
   "require": {
-    "typo3/cms": "^6.2.26",
-    "typo3-ter/typo3-console": "^1.1.7"
+    "typo3/cms": "^7.6",
+    "typo3-ter/typo3-console": "^3.4"
+  },
+  "require-dev": {
+    "typo3-ter/extension-builder": "~7.6"
   },
   "config": {
     "vendor-dir": "htdocs/vendor"
@@ -15,7 +29,7 @@
   "extra": {
     "typo3/cms": {
       "cms-package-dir": "{$vendor-dir}/typo3/cms",
-      "web-dir": "htdocs"
+      "web-dir": "./htdocs/web"
     }
   }
 }

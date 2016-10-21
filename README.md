@@ -8,7 +8,7 @@
 - [Configuration](#Configuration)
 
 ## <a name="What-does-it-do"></a>What does it do?
-This project offers an scaffold for TYPO3 CMS in a virtual machine with docker.
+This project offers an scaffold for TYPO3 CMS 7 LTSin a virtual machine with docker.
 
 ## <a name="Requirements"></a>Minimum Requirements
 
@@ -23,7 +23,7 @@ For the first installation you have to execute this command:
 ```
 docker-compose up -d
 ```
-Install the [TYPO3 CMS 6 LTS](https://composer.typo3.org/) with composer:
+Install the [TYPO3 CMS 7 LTS](https://composer.typo3.org/) with composer:
 ```
 composer install
 ```
